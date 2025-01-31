@@ -15,7 +15,7 @@ const Herosection = () => {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: containerref.current,
-                start: "53% 50%", 
+                start: "60% 50%", 
                 scrub: true,
 
             }

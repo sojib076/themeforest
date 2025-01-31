@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import {useRef } from "react";
 import { Paintbrush, Code, Megaphone, } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -38,22 +38,9 @@ export default function Services() {
   const sectionRef = useRef(null);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
 
 
-    handleResize();
-
-
-    window.addEventListener('resize', handleResize);
-
-  
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+ 
 
   useGSAP(() => {
     if (!sectionRef.current || cardRefs.current.length === 0) return;
@@ -61,23 +48,32 @@ export default function Services() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: isMobile ? "55% 80%" : "58% 80%",
-        end: "top 20%",
+        start: "top 80%",
+        end: "top 50%",
         scrub: true,
-      
+
       },
     });
 
-    cardRefs.current.forEach((card, index) => {
-      if (!card) return;
-      tl.to(card, {
-
-        rotate: 7 * (index % 2 === 0 ? 1 : -1),
-
-        animationDuration: 2,
-        ease: "bounce.inOut",
-
-      })
+    cardRefs.current.forEach((card) => {
+      tl.fromTo(
+        card,
+        {
+   
+          y: 50,
+          rotate: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.5,
+          rotate: 0,
+          
+          ease: "power3.out",
+          
+        },
+        
+      );
     });
   }, []);
 
