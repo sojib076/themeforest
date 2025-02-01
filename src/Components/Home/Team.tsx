@@ -56,11 +56,11 @@ const Team = () => {
                             key={index}
                             className="
                                 
-                            lg:h-80 h-[230px] bg-white rounded-[20px] shadow-[0px_0px_60px_0px_rgba(0,0,0,0.05)] 
+                            lg:h-80 h-[240px] bg-white rounded-[20px] shadow-[0px_0px_60px_0px_rgba(0,0,0,0.05)] 
                     flex  justify-between  >
                 " >
                             <div
-                                className=' lg:p-8 p-3'
+                                className=' lg:p-8 p-5'
                             >
                                 <h1 className="text-[#0e191e] lg:text-2xl text-xl font-bold font-['Urbanist'] capitalize lg:leading-10">Ronald Richards</h1>
                                 <h2 className="text-[#5b5b5b] text-lg font-normal font-['Urbanist'] lg:leading-7">Software Developer</h2>
@@ -102,7 +102,7 @@ const Team = () => {
 
                             </div>
                             <div>
-                                <div className="lg:w-[250px] w-[160px] lg:h-80 h-[230px] bg-[#d9d9d9] rounded-tr-[20px] rounded-br-[20px]" />
+                                <div className="lg:w-[250px] w-[160px] lg:h-80 h-[240px] bg-[#d9d9d9] rounded-tr-[20px] rounded-br-[20px]" />
                             </div>
                         </div>
 

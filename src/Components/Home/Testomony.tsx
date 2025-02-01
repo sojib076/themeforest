@@ -43,7 +43,7 @@ const Testomony = () => {
                         <div className="w-[300px]  h-[363px] bg-[#d9d9d9] hidden md:block rounded-tr-[20px] rounded-br-[20px]" />
                     </div>
                     <div
-                        className="flex items-center w-[20%] mx-auto  space-x-4 lg:mt-10 my-5"
+                        className="flex items-center lg:w-[20%] w-[60%] mx-auto  space-x-4 lg:mt-10 my-5"
                     >
 
 

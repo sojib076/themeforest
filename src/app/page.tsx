@@ -2,6 +2,7 @@
 
 import AboutUs from "@/Components/Home/AboutUs";
 import Choose from "@/Components/Home/Choose";
+import FAQ from "@/Components/Home/FAQ";
 import Herosection from "@/Components/Home/HeroSection";
 import Price from "@/Components/Home/Price";
 import Projects from "@/Components/Home/Projects";
@@ -21,6 +22,7 @@ export default function Home() {
       <Price />
       <Testomony />
       <Team />
+      <FAQ />
   </div>
   );
 }
