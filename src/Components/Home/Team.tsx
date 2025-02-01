@@ -1,7 +1,38 @@
+"use client";
+
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import React from "react";
 
 
 const Team = () => {
+
+    const itemRefs = React.useRef<(HTMLDivElement | null)[]>([]);
+    useGSAP(() => {
+        itemRefs.current.forEach((item, index) => {
+            if (item) {
+                gsap.from(item, {
+                    opacity: 0,
+                    y: 50,
+                    duration: 0.5,
+                    delay: index * 0.1,
+                    scale: 0.5,
+                   
+                    ease: "power3.out",
+                    scrub: true,
+                    scrollTrigger: {
+                        trigger: item,
+                        start: "top bottom-=100",
+                        toggleActions: "play none none reverse",
+
+                    },
+                });
+            }
+        }
+        );
+        
+    },);
     return (
         <div
             className="lg:py-[120px] lg:pb-5 py-8     "
@@ -10,22 +41,29 @@ const Team = () => {
             <h5 className=" w-[90%] text-center lg:w-[539px] mx-auto text-[#0e191e] text-2xl lg:text-[40px] font-black font-['Urbanist'] capitalize lg:leading-[44.80px]">Unleash the Power of the Digital Advertising</h5>
 
             <div
-                className=" lg:w-[80%] w-[90%] mx-auto grid lg:grid-cols-2 
+                className=" lg:w-[80%] w-[95%] mx-auto grid lg:grid-cols-2 
                 gap-5 mt-10
                 "
             >
                 {
                     [1, 2, 3, 4].map((item, index) => (
                         <div
+                        ref={(el) => {
+                            if (typeof index === 'number') {
+                                itemRefs.current[index] = el;
+                            }
+                        }}
                             key={index}
-                            className="  h-80 bg-white rounded-[20px] shadow-[0px_0px_60px_0px_rgba(0,0,0,0.05)] 
+                            className="
+                                
+                            lg:h-80 h-[230px] bg-white rounded-[20px] shadow-[0px_0px_60px_0px_rgba(0,0,0,0.05)] 
                     flex  justify-between  >
                 " >
                             <div
-                                className=' lg:p-8 p-4'
+                                className=' lg:p-8 p-3'
                             >
-                                <h1 className="text-[#0e191e] lg:text-2xl text-xl font-bold font-['Urbanist'] capitalize leading-10">Ronald Richards</h1>
-                                <h2 className="text-[#5b5b5b] text-lg font-normal font-['Urbanist'] leading-7">Software Developer</h2>
+                                <h1 className="text-[#0e191e] lg:text-2xl text-xl font-bold font-['Urbanist'] capitalize lg:leading-10">Ronald Richards</h1>
+                                <h2 className="text-[#5b5b5b] text-lg font-normal font-['Urbanist'] lg:leading-7">Software Developer</h2>
                                 <div
                                     className="grid grid-cols-1 gap-2 mt-2"
                                 >
@@ -64,7 +102,7 @@ const Team = () => {
 
                             </div>
                             <div>
-                                <div className="lg:w-[250px] w-[180px] h-80 bg-[#d9d9d9] rounded-tr-[20px] rounded-br-[20px]" />
+                                <div className="lg:w-[250px] w-[160px] lg:h-80 h-[230px] bg-[#d9d9d9] rounded-tr-[20px] rounded-br-[20px]" />
                             </div>
                         </div>
 

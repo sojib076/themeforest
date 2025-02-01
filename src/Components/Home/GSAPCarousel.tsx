@@ -2,10 +2,11 @@
 "use client"
 
 import type React from "react"
-import { useEffect } from "react"
+
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useGSAPCarousel } from "@/Hook/useGSAPCarousel"
+import { useGSAP } from "@gsap/react"
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -18,7 +19,7 @@ interface CarouselProps {
 export default function GSAPCarousel({ items, currentIndex }: CarouselProps) {
     const { carouselRef, itemRefs, totalSlides, isMobile } = useGSAPCarousel(items.length, currentIndex)
 
-    useEffect(() => {
+    useGSAP(() => {
         itemRefs.current.forEach((item, index) => {
             if (item) {
                 gsap.from(item, {
@@ -36,7 +37,7 @@ export default function GSAPCarousel({ items, currentIndex }: CarouselProps) {
                 })
             }
         })
-    }, [itemRefs])
+    },)
 
     return (
         <div className="relative  overflow-hidden">
