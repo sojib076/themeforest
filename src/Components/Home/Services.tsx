@@ -82,7 +82,7 @@ export default function Services() {
       ref={sectionRef}
       className=" 
         grid grid-cols-1 md:grid-cols-3 gap-4
-      relative z-20 lg:py-[120px] py-10 px-4 md:px-16  bg-gray-50"
+       lg:py-[120px] py-10 px-4 md:px-16  bg-gray-50"
     >
 
 

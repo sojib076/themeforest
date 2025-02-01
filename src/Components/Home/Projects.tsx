@@ -65,7 +65,7 @@ const Projects = () => {
                     >
 
     
-                            <Image src="/arrow.png"
+                            <Image src="/Arrow.png"
                                 className='cursor-pointer
                                 hover:scale-110 transition-transform duration-500 ease-in-out
                                 '
