@@ -6,6 +6,8 @@ import Herosection from "@/Components/Home/HeroSection";
 import Price from "@/Components/Home/Price";
 import Projects from "@/Components/Home/Projects";
 import Services from "@/Components/Home/Services";
+import Team from "@/Components/Home/Team";
+import Testomony from "@/Components/Home/Testomony";
 
 
 export default function Home() {
@@ -17,6 +19,8 @@ export default function Home() {
       <Choose />
       <Projects />
       <Price />
+      <Testomony />
+      <Team />
   </div>
   );
 }
