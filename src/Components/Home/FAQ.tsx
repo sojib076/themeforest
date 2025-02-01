@@ -33,7 +33,7 @@ const FAQ: React.FC = () => {
                 items-center lg:w-[70%] w-[90%] mx-auto"
             ><div>
                     <h6 className="text-[#ec4814] text-xl font-bold font-['Urbanist'] capitalize leading-[25px]">FAQ</h6>
-                    <h6 className="lg:w-[520px] text-[#0e191e] lg:text-[40px] font-black font-['Urbanist'] capitalize lg:leading-[44.80px] mt-1">Navigate the Digital World with Confidence</h6>
+                    <h6 className="lg:w-[520px] text-[#0e191e] text-xl lg:text-[40px] font-black font-['Urbanist'] capitalize lg:leading-[44.80px] mt-1">Navigate the Digital World with Confidence</h6>
                     <p className="lg:w-[520px] lg:mt-5 mt-2 text-[#5b5b5b] text-lg font-normal font-['Urbanist'] leading-7">Aliquam eros justo, posuere loborti laorematullamcorper the posuer viverra .Aliquam eroo, posuere loborti</p>
 
                     <div

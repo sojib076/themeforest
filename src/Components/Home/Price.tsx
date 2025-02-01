@@ -7,8 +7,8 @@ const Price = () => {
         <div
             className=' lg:pt-60  pt-52 relative'
         >
-            <h1 className="text-[#ec4814] text-xl font-bold font-['Urbanist'] capitalize leading-[25px] text-center">Our Pricing</h1>
-            <h1 className=" lg:w-[530px] w-[80%] mx-auto text-center text-[#0e191e] lg:text-[40px] font-black font-['Urbanist']
+            <h1 className="text-[#ec4814] text-sm font-bold font-['Urbanist'] capitalize leading-[25px] text-center">Our Pricing</h1>
+            <h1 className=" lg:w-[530px] w-[80%] mx-auto text-center text-[#0e191e] lg:text-[40px] text-xl font-black font-['Urbanist']
              capitalize lg:leading-[44.80px]">
                 Drive Growth Through Digital the and Marketing</h1>
 

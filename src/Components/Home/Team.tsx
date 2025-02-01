@@ -102,7 +102,7 @@ const Team = () => {
 
                             </div>
                             <div>
-                                <div className="lg:w-[250px] w-[160px] lg:h-80 h-[240px] bg-[#d9d9d9] rounded-tr-[20px] rounded-br-[20px]" />
+                                <div className="lg:w-[250px] w-[140px] lg:h-80 h-[240px] bg-[#d9d9d9] rounded-tr-[20px] rounded-br-[20px]" />
                             </div>
                         </div>
 

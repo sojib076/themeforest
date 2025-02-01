@@ -70,7 +70,7 @@ const Projects = () => {
                                 hover:scale-110 transition-transform duration-500 ease-in-out
                                 '
                             alt='arrow' width={100} height={20} onClick={prev} />
-                            <Image src="/arrow.png"
+                            <Image src="/Arrow.png"
                                 className='cursor-pointer
                                 transform rotate-180
                                 hover:scale-110 transition-transform duration-500 ease-in-out
