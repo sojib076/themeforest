@@ -7,10 +7,10 @@ export default function ShowcasePage() {
   const showcaseItems = [
     {
       id: 1,
-      title: "Homepage",
+      title: "Artora",
       description: "Main landing page with hero section and features",
       image: "/placeholder.svg?height=600&width=800",
-      path: "/",
+      path: "/artora",
     },
     {
       id: 2,
