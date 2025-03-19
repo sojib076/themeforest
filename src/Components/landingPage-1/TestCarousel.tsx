@@ -22,7 +22,7 @@ export default function GSAPCarousel({ items }: CarouselProps) {
 
     const [currentIndex, setCurrentIndex] = useState(0)
 
-    const { carouselRef, itemRefs,  } = useGSAPTest(items.length, currentIndex)
+    const { carouselRef, itemRefs, } = useGSAPTest(items.length, currentIndex)
 
     useEffect(() => {
         itemRefs.current.forEach((item, index) => {
@@ -48,7 +48,7 @@ export default function GSAPCarousel({ items }: CarouselProps) {
     const prev = () => setCurrentIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length)
 
     return (
-        <div className="relative  z-50 overflow-hidden ">
+        <div className="relative   overflow-hidden ">
             <div className="flex relative" ref={carouselRef}>
                 {items.map((item: { Author: any }, index: number) => (
                     <div
@@ -59,13 +59,11 @@ export default function GSAPCarousel({ items }: CarouselProps) {
                             }
                         }}
 
-                        className={" min-w-[100%] bg-gray-400 rounded-[20px]    "}
-
-
+                        className={" min-w-[100%] rounded-[20px]   "}
                     >
 
                         <div
-                            className=' relative  flex
+                            className=' relative  flex shadow-[0px_0px_60px_0px_rgba(0,0,0,0.05)] bg-white
                             lg:flex-row flex-col rounded-[20px]
                         justify-between'
                         >
@@ -95,7 +93,6 @@ export default function GSAPCarousel({ items }: CarouselProps) {
 
                             <div className="w-[300px]  h-[363px] bg-[#d9d9d9] hidden md:block rounded-tr-[20px] rounded-br-[20px]" />
                         </div>
-                    
 
 
 
@@ -103,30 +100,30 @@ export default function GSAPCarousel({ items }: CarouselProps) {
 
 
                     </div>
-                        
+
                 ))}
-               
+
             </div>
             <div
-                            className="flex items-center lg:w-[20%] w-[60%] mx-auto  space-x-4 lg:mt-10 my-5 "
-                        >
+                className="flex items-center lg:w-[20%] w-[60%] mx-auto  space-x-4 lg:mt-10 my-5 "
+            >
 
 
-                            <Image src="/Arrow.png"
-                            onClick={prev}
-                                className='cursor-pointer
+                <Image src="/Arrow.png"
+                    onClick={prev}
+                    className='cursor-pointer
                                                     hover:scale-110 transition-transform duration-500 ease-in-out
                                                     '
-                                alt='arrow' width={100} height={20} />
-                            <Image src="/Arrow.png"
-                            onClick={next}
-                                className='cursor-pointer
+                    alt='arrow' width={100} height={20} />
+                <Image src="/Arrow.png"
+                    onClick={next}
+                    className='cursor-pointer
                                                     transform rotate-180
                                                     hover:scale-110 transition-transform duration-500 ease-in-out
                                                     '
-                                alt='arrow' width={100} height={20} />
+                    alt='arrow' width={100} height={20} />
 
-                        </div>
+            </div>
 
         </div>
     )

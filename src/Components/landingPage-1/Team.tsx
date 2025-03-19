@@ -35,7 +35,7 @@ const Team = () => {
     },);
     return (
         <div
-            className="lg:py-[120px] lg:pb-5 py-8     "
+            className="lg:py-[120px] lg:pb-5   py-20  "
         >
             <h5 className="text-center text-[#ec4814] text-xl font-bold font-['Urbanist'] capitalize leading-[25px]">Our Team</h5>
             <h5 className=" w-[90%] text-center lg:w-[539px] mx-auto text-[#0e191e] text-2xl lg:text-[40px] font-black font-['Urbanist'] capitalize lg:leading-[44.80px]">Unleash the Power of the Digital Advertising</h5>

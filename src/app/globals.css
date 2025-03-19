@@ -2,5 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html {
+      scroll-behavior: auto !important;
+    }
+  }
 
+  @layer components {
+    .artoraHeading {
+      @apply  font-normal text-[#222222] font-['Pinyon_Script']  ;
+    }
+    .antoraPara {
+      @apply  text-[#222222]  opacity-75   font-normal font-['Inter']  ;
+    }
+   .jakarta{
+    @apply font-extrabold font-['Plus_Jakarta_Sans']  text-[#222222] ;
+   }
+  }
 

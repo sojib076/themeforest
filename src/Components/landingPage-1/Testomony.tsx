@@ -33,8 +33,8 @@ const Testomony = () => {
         },
     ]    
     return (
-        <div className="relative lg:pt-[100px] mt-52 lg:mt-0 py-10 px-4 md:px-16">
-            <div className="lg:h-[653px] h-40 bg-[#eeeeee] rounded-[20px] relative ">
+        <div className="relative lg:pt-[100px] lg:mt-0 py-10 px-4 md:px-16">
+            <div className="lg:h-[653px] h-[400px]  bg-[#eeeeee] rounded-[20px] relative ">
             <div className='absolute bottom-[-20%] w-[90%] left-[5%] mx-auto rounded-3xl '>
             <TestCarousel items={carouselItems}  />
             </div>
