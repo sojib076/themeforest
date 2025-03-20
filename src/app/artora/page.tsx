@@ -1,5 +1,6 @@
 
 import AntoraAbout from '@/Components/Artora/AntoraAbout';
+import AwardsSection from '@/Components/Artora/AntoraAwards';
 import AntoraPortfolio from '@/Components/Artora/AntoraPortfolio';
 import AntoraStartProjects from '@/Components/Artora/AntoraStartProjects';
 import AntoraTestimonials from '@/Components/Artora/AntoraTestimonials';
@@ -16,6 +17,7 @@ const Artora = () => {
             <AntoraPortfolio/>
             <AntoraTestimonials />
             <AntoraStartProjects />
+            <AwardsSection />
         </div>
     );
 };
