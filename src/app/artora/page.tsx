@@ -7,6 +7,7 @@ import AntoraTestimonials from '@/Components/Artora/AntoraTestimonials';
 import ArtoraBanner from '@/Components/Artora/artoraBanner';
 import ArtoraServices from '@/Components/Artora/artoraServices';
 import React from 'react';
+import ArtFooter from '@/Components/Artora/ArtoraFooter';
 
 const Artora = () => {
     return (
@@ -18,6 +19,7 @@ const Artora = () => {
             <AntoraTestimonials />
             <AntoraStartProjects />
             <AwardsSection />
+            <ArtFooter />
         </div>
     );
 };
