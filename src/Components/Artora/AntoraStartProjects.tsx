@@ -8,7 +8,7 @@ const AntoraStartProjects = () => {
 
         >
             <div
-                className=' lg:h-[684px] h-[500px] bg-[#222222]  rounded-3xl flex flex-col justify-center items-center'
+                className=' py-10  bg-[#222222]  rounded-3xl flex flex-col justify-center items-center'
             >
                 <h6 className=" text-center  text-[#fefbf6] lg:text-[160px] font-extrabold 
                     font-['Plus_Jakarta_Sans'] lg:leading-[160px] lg:text-6xl text-5xl">BEGIN YOUR</h6>

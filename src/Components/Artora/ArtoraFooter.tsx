@@ -38,10 +38,10 @@ export default function ArtFooter() {
 
     return (
         <footer className="">
-            <div className=" flex flex-col justify-between lg:h-[650px] container mx-auto bg-[#121212] text-white 
+            <div className=" flex flex-col justify-between lg:h-[650px]  mx-auto bg-[#121212] text-white 
             px-4 md:px-12 mt-20 lg:rounded-b-[50px] rounded-b-[20px] pt-5 md:pt-16 ">
                
-                <div className="flex flex-col md:flex-row justify-between lg:gap-8 gap-5">
+                <div className="flex flex-col md:flex-row justify-between lg:gap-8  gap-5">
                     {footerSections.map((section, index) => (
                         <div key={index}>
                             <h3 className="text-xl font-medium lg:mb-6 mb-3">{section.title}</h3>
@@ -57,8 +57,8 @@ export default function ArtFooter() {
                         </div>
                     ))}
                   
-                        <div className="lg:w-[524px] w-full">
-                            <div className="bg-[#222222] p-8 rounded-lg">
+                        <div className="lg:w-[524px]   w-full">
+                            <div className="bg-[#222222] md:p-8 rounded-lg">
                                 <div className="mb-4">SUBSCRIBE TO OUR</div>
                                 <h3 className="lg:text-5xl  text-2xl font-bold mb-8">NEWSLETTER</h3>
                                 <div className="flex flex-col sm:flex-row gap-4">
@@ -76,7 +76,7 @@ export default function ArtFooter() {
 
 
              
-          <h1 className=" md:text-[320px] text-7xl  font-bold lg:-mb-8 ">ARTORA</h1>
+          <h1 className=" md:text-[150px] lg:text-[320px]  text-7xl  font-bold lg:-mb-8 ">ARTORA</h1>
        
 
 

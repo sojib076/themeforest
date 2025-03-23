@@ -11,7 +11,7 @@ const ArtoraBanner = () => {
     const containerref = useRef(null);
     const textref = useRef(null);
     const buttonRef = useRef<HTMLButtonElement | null>(null);
-    
+
 
     const handleClick = () => {
         gsap.fromTo(
@@ -38,7 +38,7 @@ const ArtoraBanner = () => {
     useGSAP(() => {
         gsap.fromTo(
             ".BannerVideo",
-            { scale:.7 },
+            { scale: .7 },
             {
                 scale: 1,
                 duration: 1,
@@ -48,7 +48,7 @@ const ArtoraBanner = () => {
                     start: "top 80%",
                     end: "bottom 20%",
                     scrub: true,
-                   
+
                 },
             }
         );
@@ -57,10 +57,10 @@ const ArtoraBanner = () => {
 
 
     return (
-        <div ref={containerref} className='lg:px-10 lg:p-12 p-3  overflow-hidden'>
+        <div ref={containerref} className='lg:px-10 lg:p-12 md:p-5 p-3  overflow-hidden'>
             <div className='flex  justify-between gap-5 ' >
-                <h1 className="artoraHeading lg:text-[200px] text-5xl lg:leading-[200px]">Artistic</h1>
-                <h1 className="lg:w-[25%] w-full lg:text-xl lg:leading-[30px] text-sm antoraPara">We redefine creative possibilities, ensuring your brand stands at the forefront of design<br />uniqueness and excellence.</h1>
+                <h1 className="artoraHeading lg:text-[200px] break-words text-5xl lg:leading-[200px]">Artistic</h1>
+                <h1 className="md:w-[25%]  w-full lg:text-xl lg:leading-[30px] text-sm antoraPara">We redefine creative possibilities, ensuring your brand stands at the forefront of design<br />uniqueness and excellence.</h1>
             </div>
             <div
                 className='flex 
@@ -97,7 +97,7 @@ const ArtoraBanner = () => {
                     <Play size={50} />
                 </div>
             </div>
-            
+
 
         </div>
     );

@@ -56,12 +56,12 @@ const AntoraTestimonials = () => {
     };
 
     return (
-        <div className='lg:p-12 p-4 mt-10 lg:h-[100vh]'>
+        <div className='lg:p-12 p-4 mt-10 '>
             <div className='lg:flex justify-between'>
                 <h6>/Testimonials</h6>
                 <h3 className="text-[#222222] lg:text-[64px] font-extrabold 
                 mt-5 lg:mt-0
-                lg:leading-[72px] text-2xl lg:w-[80%] w-full testimonial-text lg:min-h-[500px]">
+                lg:leading-[72px] text-2xl lg:w-[90%] w-full testimonial-text lg:min-h-[500px]">
                     {text}
                 </h3>
             </div>

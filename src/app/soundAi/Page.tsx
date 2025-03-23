@@ -1,12 +1,12 @@
-import React from 'react';
+import SoundBanner from "@/Components/SoundAi/SoundBanner";
 
-const SoundAi = () => {
+
+const Page = () => {
     return (
         <div>
-            <SoundAi></SoundAi>
-            
+            <SoundBanner />
         </div>
     );
 };
 
-export default SoundAi;
+export default Page;

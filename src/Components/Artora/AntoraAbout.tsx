@@ -21,7 +21,7 @@ const AntoraAbout = () => {
                 start: "top 50%",
                 end: "bottom 110%",
                 scrub: 1,
-                markers: true,
+        
             
                
 

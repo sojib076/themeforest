@@ -93,7 +93,7 @@ export default function AntoraPortfolio() {
 
 
   return (
-    <main className="min-h-screen bg-[#1a1a1a] text-white lg:p-6 p-3 md:p-12">
+    <main className="min-h-screen bg-[#1a1a1a] text-white lg:p-6 p-3 md:p-4">
       <div className=" ">
        
       <div className="lg:flex  items-center  justify-between mb-10 ">
@@ -123,7 +123,7 @@ export default function AntoraPortfolio() {
         
         <div ref={projectsRef} className="grid grid-cols-1 md:grid-cols-2 lg:gap-6 gap-3">
           {filteredProjects.map((project) => (
-            <div key={project.id} className="bg-[#2a2a2a]  lg:w-[660px] w-[100%] lg:h-[640px]  lg:rounded-[50px] rounded-3xl overflow-hidden">
+            <div key={project.id} className="bg-[#2a2a2a]   w-[100%] lg:h-[640px]  lg:rounded-[50px] rounded-3xl overflow-hidden">
               <div className="lg:p-6 p-3">
                 <p className="text-gray-400 text-sm">/ {project.year}</p>
                 <h2 className="text-2xl md:text-3xl font-bold mt-1 mb-4">{project.title}</h2>

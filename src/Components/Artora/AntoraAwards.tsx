@@ -33,7 +33,7 @@ const isMobile = useIsMobile();
           scrollTrigger: {
             trigger: item,
             toggleActions: "play none none reverse",
-            markers: true,
+        
           },
 
         });

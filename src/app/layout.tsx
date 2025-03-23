@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono ,Pinyon_Script ,Plus_Jakarta_Sans } from "next/font/google";
+import { Geist, Geist_Mono ,Pinyon_Script ,Plus_Jakarta_Sans , Poppins  } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/Hook/SmoothScroll";
 
@@ -27,6 +27,11 @@ const plusJakartaSans =  Plus_Jakarta_Sans({
 });
 
 
+const poppins = Poppins({
+  weight: "400",
+  variable: "--font-poppins",
+  subsets: ["latin"],
+});
 
 
 
@@ -44,6 +49,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable}
         ${pinyonScript.variable} ${plusJakartaSans.variable}
+
+        ${poppins.variable}
         
         antialiased`}
       >
