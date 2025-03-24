@@ -3,26 +3,32 @@
 import { useState, useEffect } from "react";
 import { Play, Pause, HeartIcon } from "lucide-react";
 
+
 const MusicCard = () => {
-  const [audio] = useState(new Audio());
+  const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  useEffect(() => {
-    audio.src = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
-    return () => audio.pause();
-  }, [audio]);
 
-  const togglePlay = () => {
-    if (isPlaying) {
-      audio.pause();
-    } else {
-      audio.play();
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const newAudio = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3");
+      setAudio(newAudio);
     }
-    setIsPlaying(!isPlaying);
+  }, []);
+  const togglePlay = () => {
+    if (audio) {
+      if (isPlaying) {
+        audio.pause();
+      } else {
+        audio.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
   };
 
   return (
-    <div className=" lg:-ml-20  w-[367px] h-52 bg-[#fff38a] rounded-[30px] flex flex-col p-8 gap-4 cursor-pointer" onClick={togglePlay}>
+    <div className="  h-52 bg-[#fff38a] rounded-[30px] flex flex-col p-8 gap-4 cursor-pointer" onClick={togglePlay}>
+      
       <div className="flex items-center justify-between">
         <h2 className="text-black text-2xl font-medium">Maria Gomez</h2>
         

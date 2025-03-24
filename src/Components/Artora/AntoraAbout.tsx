@@ -114,12 +114,12 @@ const AntoraAbout = () => {
             <div
                 ref={storiesRef}
             
-                className="  flex flex-col lg:flex-row justify-between items-start lg:mt-[55px]"
+                className="  flex flex-col gap-5 lg:flex-row justify-between items-start lg:mt-[55px]"
             >
 
                 <div className="   lg:w-[685px] w-full lg:h-[344px] h-52  bg-[#d9d9d9] rounded-[50px]" />
 
-                <div className="flex items-end  flex-col lg: gap-5 lg:gap-32 mt-1 lg:mt-0">
+                <div className="flex lg:items-end   flex-col gap-5 lg:gap-32 mt-1 lg:mt-0">
                     <div
                         className="flex justify-between gap-5 mt-5  "
                     >
@@ -136,7 +136,7 @@ const AntoraAbout = () => {
                     <div
 
                     >
-                        <p className=" lg:w-[575px] text-[#222222] text-xl font-normal font-['Inter'] leading-[30px]"
+                        <p className=" lg:w-[575px]  text-[#222222] text-xl font-normal font-['Inter'] leading-[30px]"
                         >At ARTIQUE, we merge imagination with expertise, creating captivating
                             designs and strategies that resonate. Our grand mission is to transform
                             your brand into an unforgettable masterpiece of a branding design.</p>

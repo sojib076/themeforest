@@ -76,7 +76,7 @@ export default function ArtFooter() {
 
 
              
-          <h1 className=" md:text-[150px] lg:text-[320px]  text-7xl  font-bold lg:-mb-8 ">ARTORA</h1>
+          <h1 className=" md:text-[150px] lg:text-[200px]  text-7xl  font-bold lg:-mb-8 ">ARTORA</h1>
        
 
 
